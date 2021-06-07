@@ -1,8 +1,6 @@
 ul.chat-window {
   width: 100%;
   height: 100%;
-  overflow: scroll;
-  margin-top: 0;
   padding: 20px;
   list-style: none;
   margin: 0;
@@ -13,19 +11,25 @@ ul.chat-window>li .text {
   box-sizing: border-box;
   margin-bottom: 10px;
   border-radius: 10px;
-  padding: 10px 15px;
+  padding: 5px 10px;
   line-height: 20px;
 }
 
 ul.chat-window>li.bot .text {
-  background-color: #01bad8;
+  background-color: #2462cc;
   color: #fff;
   float: left;
 }
+ul.chat-window>li.bot .text > a{
+  background-color: #2462cc;
+  color: #fff;
+  float: left;
+  text-decoration: underline;
+}
+
 
 ul.chat-window>li {
   clear: both;
-  max-width: 80%;
   box-sizing: border-box;
   white-space: pre-wrap;
 }
@@ -39,7 +43,8 @@ ul.chat-window>li.bot {
 }
 
 ul.chat-window>li.user .text {
-  background-color: #ddd;
+  color: #f7f8f8;
+  background-color: #919292;
 }
 
 ul.chat-window>li.options {
@@ -52,20 +57,23 @@ ul.chat-window>li.options {
 }
 
 ul.chat-window>li.options>ul {
-  margin-top: 0;
   padding: 0;
   list-style: none;
   margin-top: 10px;
 }
 
 ul.chat-window>li.options>ul>li {
-  border-radius: 10px;
-  padding: 5px 10px;
-  border: 1px solid #01bad8;
   display: inline-block;
   cursor: pointer;
   margin-left: 10px;
   margin-bottom: 10px;
+  font-weight: 500;
+  padding: 7px 15px;
+  border-radius: 4px;
+  background: #777979;
+  box-shadow: 2px 3px 4px 0 rgb(0 0 0 / 25%);
+  border: 0;
+  color: #fff;
 }
 
 .typing-indicator {
@@ -75,8 +83,7 @@ ul.chat-window>li.options>ul>li {
   border-radius: 50px;
   padding: 10px;
   display: table;
-  margin: 0;
-  margin-left: 10px;
+  margin: 0 0 0 10px;
   position: relative;
   -webkit-animation: 2s bulge infinite ease-out;
           animation: 2s bulge infinite ease-out;
